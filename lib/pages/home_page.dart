@@ -128,6 +128,12 @@ class _HomePageState extends State<HomePage> {
                                           child: Column(children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
+                                                  bottom: 3),
+                                              child: Image.asset(
+                                                  'assets/drag.png'),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
                                                   left: 16,
                                                   right: 16,
                                                   bottom: 13),
