@@ -42,12 +42,14 @@ class _BottomNavBarState extends State<BottomBar> {
         children: [
           InkWell(
             onTap: () {
-              page = EPageOnSelect.homePage;
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (_) => const HomePage()),
-                  (route) => false);
-              setState(() {});
+              if (page != EPageOnSelect.homePage) {
+                page = EPageOnSelect.homePage;
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (_) => const HomePage()),
+                    (route) => false);
+                setState(() {});
+              }
             },
             child: SizedBox(
                 width: 60,
@@ -77,12 +79,14 @@ class _BottomNavBarState extends State<BottomBar> {
           ),
           InkWell(
             onTap: () {
-              page = EPageOnSelect.quizPage;
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (_) => const QuizPage()),
-                  (route) => false);
-              setState(() {});
+              if (page != EPageOnSelect.quizPage) {
+                page = EPageOnSelect.quizPage;
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (_) => const QuizPage()),
+                    (route) => false);
+                setState(() {});
+              }
             },
             child: SizedBox(
                 width: 50,
@@ -112,12 +116,14 @@ class _BottomNavBarState extends State<BottomBar> {
           ),
           InkWell(
             onTap: () {
-              page = EPageOnSelect.newsPage;
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (_) => const NewsPage()),
-                  (route) => false);
-              setState(() {});
+              if (page != EPageOnSelect.newsPage) {
+                page = EPageOnSelect.newsPage;
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (_) => const NewsPage()),
+                    (route) => false);
+                setState(() {});
+              }
             },
             child: SizedBox(
                 width: 50,
@@ -147,12 +153,14 @@ class _BottomNavBarState extends State<BottomBar> {
           ),
           InkWell(
             onTap: () {
-              page = EPageOnSelect.settingsPage;
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (_) => const SettingsPage()),
-                  (route) => false);
-              setState(() {});
+              if (page != EPageOnSelect.settingsPage) {
+                page = EPageOnSelect.settingsPage;
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (_) => const SettingsPage()),
+                    (route) => false);
+                setState(() {});
+              }
             },
             child: SizedBox(
                 width: 50,
